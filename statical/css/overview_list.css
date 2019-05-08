@@ -1,0 +1,169 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background: #e8e8e8;}
+	
+	
+	a{
+	text-decoration: none;
+}
+	
+	
+.content{
+	width: 1120px;
+	margin: 0px auto;
+}
+.content .title{
+    width: 131px;
+    height: 35px;
+    background: #a3010c;
+    text-align: right;
+    padding-right: 37px;
+    font-size: 18px;
+    line-height: 35px;
+    color: #fff;
+    font-weight: 100;
+    font-family: 'STHeiti Light',SimHei,'Microsoft YaHei';
+    float: left;
+    }
+  
+  .text{margin:1px  0 0 168px;}  
+  
+  ul{list-style: none outside none;
+    list-style-type: none;
+    list-style-position: outside;
+    list-style-image: none;}
+    
+    .text ul li{
+    border-top-width: 2px;
+    border-top-style: solid;
+    }
+    
+    .text ul li.active{
+    	border-top: 2px solid #c81622;
+    }
+    
+    .text ul li{    width: 95px;
+    height: 31px;
+    float: left;
+    text-align: center;
+    font-size: 17px;
+    line-height: 2em;
+    border-top: 2px solid #e8e8e8;
+    margin-right: 1px;}
+   
+   
+    
+   .text ul li a{    font-weight: lighter;
+    color: #323232; }
+
+.text ul li:hover{border-top:2px solid #c81622 ; 
+
+}
+
+.text ul li a:hover,
+.text ul li.active a{
+	color: #c81622;}
+
+
+.academic_main{padding-top: 32px;}
+ 
+ .academic_main_img{padding-top: 15px;}
+
+.academic_main_img ul li{float: left ;	width: 33%;
+	
+}
+
+.academic_main_img ul li a{display: block;
+    margin-right: 2px;
+    position: relative;}
+
+.academic_main_img ul li a img{ width: 361px;display: block;     transition-duration: 1s;}
+ 
+ .academic_main_img ul li a  h4{ 
+ 	background:url(../img/con_bg.png);
+	 width: 361px;
+	position: relative;
+ 	top: -40px;
+ 	font-size: 16px;
+    
+    line-height: 2.5em;
+    text-align: center;
+    font-weight: 100;
+    color: #fff; }
+
+.academic_main_article{width: 100%;position: relative;margin-top: 35px;padding-bottom: 45px;}
+
+.academic_main_article_mobile{width: 230px;background: #fff;padding: 0 0 50px 0;
+    float: right;
+    overflow: hidden;}
+    .academic_main_article_top{    
+   border-top:3px solid #a3010c;
+    border-top-width: 3px;
+    border-top-style: solid; overflow: hidden;}
+
+.academic_main_article_2>div{padding: 0 10px 50px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    border-left: 1px solid #bebebe;
+    border-left-width: 1px;
+    border-left-style: solid;}
+
+.academic_main_article_text{    padding: 5px 5px 0;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    overflow: hidden;}
+.academic_main_article_text i{    font-size: 14px;
+    line-height: 3em;
+    font-style: normal;
+    color: #505050;}
+
+.academic_main_article_3 em{    cursor: pointer;
+    color: #505050;}
+    
+ .f14px{font-size: 14px}
+.f16px{font-size: 16px}
+.f18px{font-size: 18px}
+
+em{    font-style: normal;
+    font-weight: 400;}
+	
+.print li{width: 50%;float:left; font-size: 14px;line-height: 27px;}
+	.print li a{    padding-left: 12px;color: #323232;}
+	
+.time{padding-top: 10px;    line-height: 25px;
+    padding-left: 5px;}
+.time p{    font-size: 12px;
+
+    color: #505050;}
+
+
+.share a img{width: 22PX;height: 25PX ;}
+.share{padding-top:10px ; float: left;}
+.share span{width: 22px;height: 25px;}
+.image{padding-top:30px ; float: right;}
+.image img{width: 230px;height: 345px;  overflow: hidden;}
+
+.introduce{   width: 830px; margin-top:200px
+    font-size: 14px;
+    line-height:18px;
+    float: left;
+    }
+.art{border-top: 1px dotted #bebebe;
+    border-top-width: 1px;
+    border-top-style: dotted;
+    border-top-color: rgb(190, 190, 190);
+    border-bottom: 1px dotted #bebebe;
+    margin-top: 10px;
+    padding: 20px 5px 20px;
+    float: right;
+      
+    }
+.introduce div{  text-indent: 28px;font-size:13px ; font-weight:lighter}

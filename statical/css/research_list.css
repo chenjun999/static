@@ -1,0 +1,86 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background: #e8e8e8;
+}
+a{
+	text-decoration: none;
+}
+.cear_float{
+	clear: both;
+}
+.content{
+	width: 1120px;
+	margin: 90px auto 50px;
+}
+.content .title{
+    width: 131px;
+    height: 35px;
+    background: #a3010c;
+    text-align: right;
+    padding-right: 37px;
+    font-size: 18px;
+    line-height: 35px;
+    color: #fff;
+    font-weight: 100;
+    font-family: 'STHeiti Light',SimHei,'Microsoft YaHei';
+    }
+.content .picture_box{
+	margin-top: 40px;
+}
+.content .picture_box figure{
+	display: block;
+	float: left;
+	margin-left: 43px;
+    background: #fff;
+    border: 1px solid #bfbfbf;
+    overflow: hidden;
+}
+.content .picture_box figure:first-child{
+	margin-left: 0px;
+}
+
+.content .picture_box figure a:first-child{
+	display: block;
+	width: 336px;
+	height: 225px;
+	overflow: hidden;
+}
+.content .picture_box figure img{
+	width: 336px;
+	height: 225px;
+	transition: 1s;
+	transition-property:transform,opacity;
+}
+.content .picture_box figure div{
+    height: 140px;
+    padding: 0 15px;	
+    overflow: hidden;
+}
+.content .picture_box figure div h3{
+    color: #a3010c;
+    padding-top: 10px;
+    font-weight: 100;
+}
+.content .picture_box figure div a{
+	color: #323232;
+	font-size: 14px;
+}
+.content .picture_box figure div a:hover{
+	color: #c81622;
+}
+.content .picture_box figure:nth-of-type(2) div a{
+	display: inline-block;
+	width: 44%;
+	height: 36px;
+	line-height: 36px;
+	padding-left: 15px;
+	background: url(../图片/int07.png) no-repeat left;
+}
+
+.content .picture_box figure img:hover{
+	transform: scale(1.2);
+	opacity: 0.8;
+}

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>西南政法大学 SWUPL</title>
+		<link href="css/home.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js" ></script>
+		<style>
+	.slide_container { position: relative; float: left; width: 100%; }
+.slide { position: relative; list-style: none; overflow: hidden; width: 100%; padding: 0; margin: 0; }
+.slide li { position: absolute; width: 100%; left: 0; top: 0; }
+.slide .img { display: block; position: relative; z-index: 1; height: auto; width: 100%; border: 0; }
+.slide .caption {  width:100%; position: absolute; left:0; top:0; z-index: 1; overflow: hidden;}
+.slide .caption .wz_caption{ width:1100px; margin:0 auto; overflow: hidden; position: relative;}
+.slide .caption .wz_caption div { display: block; /*width:350px;*/ height:56px; padding:10px; line-height:180%; /*border:#898989 1px solid;*/ position: absolute; z-index: 2; text-shadow: none; color: #fff; /*background: #000; background: rgba(0,0,0, .5);*/ background: url(../images/con_bg.png) repeat;right: 0; bottom:10px; overflow: hidden; vertical-align:middle; text-align:right;}
+.slide .caption .wz_caption div h3 a{ font-size: 2.0em;  color:#fff; line-height:1.35em; font-weight: normal; }
+.slide .caption .wz_caption div p{ font-size: 1.4em; line-height: 1.28em; color:#fff; margin-top: 15px; text-align:right;}
+.slide_nav { position: absolute; top: 45%; left: 10px; opacity: 0.7; z-index: 3; text-indent: -9999px; overflow: hidden; height: 44px; width: 20px; background:url(http://www.swupl.edu.cn/images/lf.png) no-repeat left top; margin-top: -22px; }
+.slide_nav:active { opacity: 1.0; }
+.slide_nav.next { left: auto;background:url(http://www.swupl.edu.cn/images/rt.png) no-repeat left top; right: 10px; }
+.slide .caption .wz_caption em{ position: absolute; right:0; bottom:0; height: 40px; text-align: right; font-size: 1.5em; line-height: 2.67em; color:#fff;text-shadow:3px 3px 3px #000; display: none;}
+
+}
+		</style>
+	</head>
+	<body>
+		<header><!--这是包括全屏轮播的背景大框，包括3个部分，一个是轮播图片的插入，二是top的黑色透明部分，第三个是轮播图片左下角的3个小导航，-->
+			<ul href="#" class="home_head_bgrongdimg" id="slider"><!--为了主页加5张轮播背景图而设立此盒子-->
+				<li><a href="#"><img src="img/header2.jpg" /></a></li>
+				<li><a href="#"><img src="img/header3.jpg" /></a></li>
+				<li><a href="#"><img src="img/header1.jpg" /></a></li>
+			</ul>
+			<script type="text/javascript" src="js/responsiveslides.min.js" ></script>
+			<script type="text/javascript">
+				$(function () {
+								    $("#slider").responsiveSlides({
+								    auto: true,
+								    pager: false,
+									timeout:6000,
+								    nav: true,
+								    speed: 500,
+								    // 对应外层div的class : slide_container
+								    namespace: "slide"
+								    });
+							});
+			</script>
+			
+			<div class="head"><!--这包括透明黑色头部的3个内容，还有头部左下角的3个小导航图片-->
+				<div class="head_t"><!--这是透明黑色的top头部120px高全屏背景大框,主要是为了背景设此盒子-->
+					
+					<div class="head_top"><!--这是透明黑色的头部里的1120px宽的内容盒子，以下分成三个box:分别是LOGO，右上角链接link，导航NAV-->
+						<div class="head_top_logo">
+							<img src="img/logo01.png"/>
+						</div>
+						
+						<!--头部top右上角链接内容开始-->
+						<div class="head_top_link">
+							<ul>
+								<li><a href="#">学生</a></li>
+								<li><a href="#">教职工</a></li>
+								<li><a href="#">校友</a></li>
+								<li><a href="#">访客</a></li>
+								<li><a href="#">智慧校园</a></li>
+								<li><a href="#">English</a></li>
+								<li><a href="#"><img src="img/ser.jpg" ></a>
+							 		<form action=" #" method="post" class=" head_top_link_search">
+							 			<input type="search" placeholder="  请输入搜索的内容、关键词、标题……" >
+							 			<img src="img/search2.jpg" />
+							 		</form>
+								</li>
+							</ul>
+						</div>
+						<!--头部top右上角链接结束-->
+						<!--导航开始-->
+						<div class="head_top_nav">
+							<ul class="head_top_nav_ul" >
+								<li class="head_top_nav_ul_li">
+									<a class="head_top_nav_ul_a" href="#" target="_blank">学校简介<img src="img/nav01.png" /></a>
+									<div class="head_top_nav_ul_intro_content">
+										<div class="head_top_nav_ul_intro_content_list">
+											<a href="overview_list.html" target="_blank">西政概览</a>
+											<a href="#">标识文化</a>
+											<a href="#">办学特色</a>
+											<a href="#">交通指南</a>
+											<a href="#">历任领导</a>
+											<a href="#">现任领导</a>
+										</div>	
+										<div class="head_top_nav_ul_intro_content_text">
+											<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;西南政法大学位于中国长江上游地区的中央直辖市重庆，
+												是新中国最早建立的高等政法学府，改革开放后全国首批重点大学，全国首批卓越法律人才教育培养基地，
+												教育部与重庆市人民政府共建高校，来华留学生中国政府奖...</p>
+											<a class="head_top_nav_ul_more" href="#">更多>></a>
+										</div>
+									</div>
+								</li>
+								<li class="head_top_nav_ul_li">
+									<a class="head_top_nav_ul_a" href="news_home.html" target="_blank">新闻资讯<img src="img/nav01.png" /></a>
+									<div class="head_top_nav_ul_news_content">
+										<div class="head_top_nav_ul_news_content_list">
+											<a href="news_list.html" target="_blank">宣传在线</a>
+											<a href="#">新闻网</a>
+											<a href="#">西政报</a>
+											<a href="#">广电台</a>
+											<a href="#">新浪微博</a>
+											<a href="#">腾讯微博</a>
+											<a href="#">微信频道</a>
+											<a href="#">图说西政</a>
+											<a href="#">橱窗画册</a>
+											<a href="#">展览馆</a>
+											<a href="#">各类专题</a>
+											<a href="#">校园刊物</a>
+											<a href="#">讲座论坛</a>
+											<a href="#">通知公告</a>
+										</div>	
+										<div class="head_top_nav_ul_news_content_text">
+											<div>
+												<a href="#">2018级本科学生军训汇报表演在校举行</a>
+												<br />
+												<p >9月21日上午，西南政法大学2018级本科学生军训汇报表演暨总结表彰大会在北园田径运动场上如期举行。
+													全体在家校...</p>
+											</div>
+											<div >
+												<a href="#">广东省人民政府参事调研组来校调研法学教育</a>
+												<br />
+												<p >9月20日上午，广东省人民政府参事、省委政法委原巡视员索健元一行来到我校交流调研，
+													听取我校专家对发展法学教育的...</p>
+											</div>
+											<a class="head_top_nav_ul_more" href="#">进入新闻网>></a>
+										</div>
+									</div>
+								</li>
+								<li class="head_top_nav_ul_li" >
+									<a class="head_top_nav_ul_a" href="college_home.html" target="_blank">学院机构<img src="img/nav01.png" /></a>
+									<div class="head_top_nav_ul_college_content">
+										<ul >
+											<li ><a href="#">民商法学院</a> </li>
+											<li ><a href="#">经济法学院</a> </li>
+											<li ><a href="#">法学院</a> </li>
+											<li ><a href="#">行政法学院</a> </li>
+											<li ><a href="#">国际法学院</a> </li>
+											<li ><a href="#">刑事侦查学院</a> </li>
+											<li ><a href="#">商学院</a> </li>
+											<li ><a href="#">经济学院</a> </li>
+											<li ><a href="#">外语学院</a> </li>
+											<li ><a href="#">新闻传播学院</a> </li>
+											<li ><a href="#">政治与公共管理学院</a> </li>
+											<li ><a href="#">马克思主义学院</a> </li>
+											<li ><a href="#">人工智能法学院</a> </li>
+											<li ><a href="#">国际教育学院</a> </li>
+											<li ><a href="#">继续教育学院</a> </li>
+											<li ><a href="#">体育部</a> </li>
+										</ul>
+										
+										<ul>
+											<li><a href="college_list.html" target="_blank">党政办公室</a></li>
+											<li><a href="#">党委组织部</a></li>
+											<li><a href="#">党委宣传部</a></li>
+											<li><a href="#">党委统战部</a></li>
+											<li><a href="#">纪委办公室、监察处</a></li>
+											<li><a href="#">党委学生工作部</a></li>
+											<li><a href="#">党委保卫部</a></li>
+											<li><a href="#">工会</a></li>
+											<li><a href="#">团委</a></li>
+											<li><a href="#">关心下一代工作委员会</a></li>
+											<li><a href="#">国内合作办公室</a></li>
+											<li><a href="#">发展规划办公室</a></li>
+											<li><a href="#">人事处</a></li>
+											<li><a href="#">国际合作与交流处</a></li>
+											<li><a href="#">科研处</a></li>
+											<li><a href="#">教务处</a></li>
+											<li><a href="#">研究生院</a></li>
+											<li><a href="#">计划财务处</a></li>
+											<li><a href="#">审计处</a></li>
+											<li><a href="#">国有资产管理处</a></li>
+											<li><a href="#">基建后勤管理处</a></li>
+											<li><a href="#">离退休工作处</a></li>
+											<li><a href="#">网络安全和信息化领导小组办公室</a></li>
+											<li><a href="#">图书馆</a></li>
+											<li><a href="#">期刊社</a></li>
+											<li><a href="#">人权研究院</a></li>
+											<li><a href="#">高等研究院</a></li>
+											<li><a href="#">司法鉴定与证据科学研究院</a></li>
+											<li><a href="#">教师工作部</a></li>
+											<li><a href="#">医院</a></li>
+											<li><a href="#">招标采购中心</a></li>
+										</ul>
+									</div>		
+								</li>
+								<li  class="head_top_nav_ul_li">
+									<a class="head_top_nav_ul_a" href="">学科专业<img src="img/nav01.png" /></a>
+									<div class="head_top_nav_ul_subject_content">
+										<div class="head_top_nav_ul_subject_content_list">
+											<a href="#">重点学科</a>
+											<a href="#">学科概况</a>
+											<a href="#">专业设置</a>
+										</div>	
+										<div class="head_top_nav_ul_subject_content_text">
+											<p>全国首批法学一级学科博士学位授权单位和全国首批法律硕士专业学位授权单位。</p>
+											<a class="head_top_nav_ul_more" href="#">更多>></a>
+										</div>
+									</div>
+								</li>
+								<li class="head_top_nav_ul_li">
+									<a class="head_top_nav_ul_a" href="">招生就业<img src="img/nav01.png" /></a>
+									<div class="head_top_nav_ul_getjob_content">
+										<div >
+											<a href="#"><img src="img/20150524213623192047.jpg" /></a>
+											
+											<span>招生</span>
+											<p>欢迎您报考西南政法大学！</p>
+											<a class="head_top_nav_ul_more" href="#">更多>></a>
+										</div>
+										<div >
+											<a href="#"><img src="img/20150524213644923221.jpg" /></a>
+										
+											<span>就业</span>
+											<p>西南政法大学就业信息网提供全面快速的就业信息。</p>
+											<a class="head_top_nav_ul_more" href="#">更多>></a>
+										</div>
+									</div>
+								</li>
+								<li class="head_top_nav_ul_li">
+									<a class="head_top_nav_ul_a" href="research_list.html" target="_blank">学术研究<img src="img/nav01.png" /></a>
+									<div class="head_top_nav_ul_academic_content">
+										<div class="head_top_nav_ul_academic_content_list">
+											<a href="academic_content .html" target="_blank">研究基地</a>
+											<a href="#">学术专题</a>
+											<a href="#">科研管理系统</a>
+										</div>	
+										<div class="head_top_nav_ul_academic_content_text">
+											<p>学校建有国家人权教育与培训基地，国家民委民族理论政策研究基地，
+												中国法学会法治研究基地，重庆市2011协同创新中心，重庆市人文社会科学重点研究基地，
+												重庆市社会科学普及基地，重庆市高校资政中心，重庆市高校...</p>
+											<a class="head_top_nav_ul_more" href="#">更多>></a>
+										</div>
+									</div>
+									
+									
+								</li>
+								
+							</ul>
+							
+						</div>
+					</div>
+						
+				</div>
+				<div class="head_bottom"><!--为了轮播图片左下角的3个小导航而设立此盒子，只需加入6个图片，加上hover效果换图片-->
+					<div class="head_bottom_smallnav">
+					<a href="#"><img src="img/nicon01.png"/><img src="img/nicon01h.png" /></a>
+					<a href="#"><img src="img/nicon05.png"/><img src="img/nicon05h.png" /></a>
+					<a href="#"><img src="img/nicon04.png"/><img src="img/nicon04h.png" /></a>
+					</div>
+				</div>
+			</div>		
+		</header>
+		<!--头部结束-->
+		<!--主体内容开始-->
+		<section >
+			<div class="main">
+				<div class="main_news">
+					<div class="main_news_title">
+						<img src="img/西政要闻.png"/>
+						<h1><a href="#">西政要闻</a></h1>
+						<div> 
+							<a href="#">更多>></a>
+							<a href="#">进入新闻网>></a>
+						</div>
+					</div>
+					<div class="main_news_content" >
+						<a href="#"><div class="main_news_content_left">
+							<!--<figure>
+								<img src="img/news1.jpg" />
+								<figcaption>全校组织工作会议召开</figcaption>
+							</figure>-->
+							<div class="main_news_content_left_s">
+								<div class="main_news_content_text">
+									<span title="全校组织工作会议召开">全校组织工作会议召开</span>
+								</div>
+							</div>
+							
+						</div></a>
+						<a href="#"><div class="main_news_content_center">
+							<!--<figure>
+								<img src="img/news2.jpg" />
+								<figcaption>校长付子堂带队参加“2018·北京人…</figcaption><!--校长付子堂带队参加“2018·北京人权论坛”-->
+							<!--</figure>-->
+							<div class="main_news_content_text">
+								<span title="校长付子堂带队参加“2018·北京人权论坛">校长付子堂带队参加“2018·北京人…</span>
+							</div>
+						</div></a>
+						<a href="#"><div class="main_news_content_right">
+							<!--<figure>
+								<img src="img/news3.jpg" />
+								<figcaption>西南政法大学代表队在世界人权模拟法庭…</figcaption><!--西南政法大学代表队在世界人权模拟法庭大赛中取得佳绩-->
+							<!--</figure>-->
+							<div class="main_news_content_text">
+								<span title="西南政法大学代表队在世界人权模拟法庭大赛中取得佳绩">西南政法大学代表队在世界人权模拟法庭…</span>
+							</div> 
+							
+						</div></a>
+						<div class="clear"></div><!--清除浮动-->
+					</div>
+					<div class="clear"></div><!--清除浮动-->
+				</div>
+				
+				<div class="main_reading">
+					<div class="main_reading_title">
+						<img src='img/t2.png'/>
+						<h1><a href="#">推荐阅读</a></h1>
+						<div> 
+							<a href="#">更多>></a>
+					
+						</div>
+					</div>
+					<div class="main_reading_content">
+						<div class="main_reading_content_left">
+							<a href="#">
+								<h1>习近平总书记出席全国教育大会并发表重要讲话</h1>
+								<p>坚持中国特色社会主义教育发展道路，培养德智体美劳全面发展的社会主义建设者和接班人。</p>
+							</a>
+						</div>
+						<div class="main_reading_content_center">
+							<a href="#">
+								<h1>学以成人在西政</h1>
+								<p>————付子堂校长在2018级新生开学典礼上的致辞</p>
+							</a>
+						</div>
+						<div class="main_reading_content_right">
+							<a href="#">	
+								<h1>习近平主持召开中央全面依法治国委员会第一次会议</h1>
+								<p>加强党对全面依法治国的集中统一领导，更好发挥法治固根本稳预期利长远的保障作用。</p>
+							</a>
+						</div>
+					</div>
+					<div class="clear"></div><!--清除浮动-->
+				</div>
+				<!--主体内容的前2个横主题（西政要闻 ，推荐阅读）结束-->
+				<!--开始4个方格子的主题内容：学术西政，故事西政，讲座论坛，通知公告-->
+				<div class="main_academic">
+					<a href="#">
+						<div class="main_academic_title">
+							<div class="main_academic_title_text">
+								<img src="img/t3.png" />
+								<p>更多>></p>
+								<p>学术西政</p>
+							</div>
+						</div>
+					</a>
+					<div class="main_academic_img">
+						<a href="#">
+							<div class="main_academic_img1">
+								<div class="main_academic_img1_text ">
+									<span>赵万一院长率团赴韩国参加第十三届“中韩土地法研讨会”</span>
+									
+								</div>
+							</div>
+						</a>
+						<a href="#">
+							<div class="main_academic_img2">
+								<div class="main_academic_img2_text ">
+									<span>孙长永教授参加“国际比较法学会第20届大会”</span>
+									
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				
+				<div class="main_story">
+					<div class="main_story_title main_academic_title">
+						<a href="#">
+							<div class="main_academic_title_text">
+								<img src="img/t4.png" />
+								<p>更多>></p>
+								<p>故事西政</p>
+							</div>
+						</a>
+					</div>
+					<div class="main_story_img">
+						<div class="main_story_img_text ">
+							<a href="#"><span>心存鸿儒意　严谨求真知</span></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class=" main_lecture ">
+					<a href="#">
+						<div class="main_academic_title main_lecture_title">
+							<div class="main_academic_title_text">
+								<img src="img/t5.png" />
+								<p>更多>></p>
+								<p>讲座论坛</p>
+							</div>
+						</div>
+					</a>
+					<div class="main_lecture_content">
+						
+						<div class="main_lecture_content1 ">
+							<div class="main_lecture_content1_text ">
+								<a href="#">西南政法大学行政法学院副教授何永红将做客西南青年人文论坛</a>
+								<p><b>题目：</b>英国有“公法”吗？——“公法”在英国的移植及其困境</p>
+								<p><b>主讲人：</b>何永红 法学博士 西南政法大学行政法学院副教授</p>
+								<p><b>时间：</b>2018年9月28日晚7点</p>
+								<p><b>地点：</b>三教一楼学术报告厅</p>
+							</div>
+						</div>
+					
+						
+						<div class="main_lecture_content2">
+							<div class="main_lecture_content2_text ">
+								<a href="#">中南财经政法大学马克思主义学院龚先庆教授讲座公告</a>
+								<p><b>题目：</b>赫鲁晓夫改革评析</p>
+								<p><b>主讲人：</b>龚先庆 中南财经政法大学马克思主义学院院长、教授、硕士生导师</p>
+								<p><b>时间：</b>2018年9月20日晚7点</p>
+								<p><b>地点：</b>图书馆学术报告厅</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+				<div class="main_notification ">
+					<a href="#">
+					<div class="main_notification_title main_academic_title">
+						<div class="main_academic_title_text">
+							<img src="img/t6.png" />
+							<p>更多>></p>
+							<p>通知公告</p>
+						</div>
+					</div>
+					</a>
+					<div class="main_notification_content ">
+						<ul>
+							<li>
+								<div class="main_notification_content_img">
+									<p>27</p>
+									<span>Sep</span>
+								</div>
+								
+								<div class="main_notification_content_text">
+									<a href="#"><p>关于举办PPT初阶培训的通知</p></a>
+								</div>
+							</li>
+							<li>
+								<div class="main_notification_content_img">
+									<p>27</p>
+									<span>Sep</span>
+								</div>
+								
+								<div class="main_notification_content_text">
+									<a href="#"><p>2019年春季赴台湾学生交流项目选拔考试通知</p></a>
+								</div>
+							</li>
+							<li>
+								<div class="main_notification_content_img">
+									<p>21</p>
+									<span>Sep</span>
+								</div>
+								
+								<div class="main_notification_content_text">
+									<a href="#"><p>关于召开西南政法大学组织工作会议的通知</p></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="clear"></div><!--清除浮动-->
+			</div>
+			
+		</section>
+		<!--主体内容结束-->
+		<!--底部一排链接开始-->
+		<aside class="clear">
+			<div class="bottom_link_x">
+				<div class="bottom_link">
+				<ul>
+					<li>
+					<a href="#">
+						<img src="img/西政邮箱.jpg" />
+						<h3>西政邮箱</h3>
+					</a>
+					</li>
+					<li>
+					<a href="#">
+					<img src="img/校领导信箱.jpg" />
+					<h3>校领导信箱</h3>
+					</a>
+					</li>
+					<li>
+					<a href="#">
+					<img src="img/图书情报.jpg" />
+					<h3>图书情报</h3>
+					</a>
+					</li>
+					<li>
+					<a href="#">
+					<img src="img/信息公开.jpg" />
+					<h3>信息公开</h3>
+					</a>
+					</li>
+					<li>
+					<a href="#">
+					<img src="img/招标采购.jpg" />
+					<h3>招标采购</h3>
+					</a>
+					</li>
+					<li>
+					<a href="#">
+					<img src="img/视频专栏.jpg" />
+					<h3>视频专栏</h3>
+					</a>
+					</li>
+					<li>
+					<a href="#">
+					<img src="img/西政理论.jpg" />
+					<h3>西政理论+</h3>
+					</a>
+					</li>
+					<li>
+					<a href="#">
+					<img src="img/法象万千.jpg" />
+					<h3>法象万千</h3>
+					</a>
+					</li>
+					<li>
+					<a href="#">
+					<img src="img/“两学一做”.jpg" />
+					<h3>“两学一做”</h3>
+					</a>
+					</li>	
+				</ul>
+				</div>		
+			</div>
+		</aside>
+		<!--底部一排链接结束-->
+		<!--尾部开始-->
+		<footer>
+			<div class="foot" >
+				<div class="foot_left">
+					<div class="foot_left_top">
+						<a href="#"><img src="img/警厅JingTing.jpg"/></a>
+						<a href="#"><img src="img/footer beianbgs.png"/></a>
+						<a href="#"><img src="img/事业单位ShiYeDanWei.jpg"/></a>
+					</div>
+					<div class="foot_left_bottom">
+						<a href="#"><img src="img/footer beianbgs.png"/>
+						<span >渝公网安备 50011202500557号</span></a>
+					</div>
+				</div>
+				<div class="foot_center">
+					<a href="#"><img src="img/logo02.jpg" /></a>
+					<p>西南政法大学版权所有 ©1994,2009,2012,2015年   渝ICP备05001036号-1</p>
+					<p>党委宣传部（新闻中心） 设计制作发布</p>
+					<p>渝北校区：重庆市渝北区宝圣大道301号  邮编：401120</p>
+					<p>沙坪坝校区：重庆市沙坪坝区壮志路2号  邮编：400031</p>
+				</div>
+				<div class="foot_right">
+					<a href="#"><figure>
+						<img src="img/西政微信频道wx01.jpg" />
+						<figcaption>西政微信频道</figcaption>
+					</figure></a>
+					<a href="#"><figure>
+						<img src="img/新浪官方微博wx02.jpg" />
+						<figcaption>新浪官方微博</figcaption>
+					</figure></a>
+					<a href="#"><figure>
+						<img src="img/腾讯官方微博wx03.jpg" />
+						<figcaption>腾讯官方微博</figcaption>
+					</figure></a>
+					<a href="#"><figure>
+						<img src="img/西政网wx04.jpg" />
+						<figcaption>西政网</figcaption>
+					</figure></a>
+				</div>
+				<div class="clear"></div><!--清除浮动-->
+			</div>
+			
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head class="college_list">
+		<meta charset="UTF-8">
+		<title>list</title>
+		<link rel="stylesheet" href="css/college_list.css" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.9.0.min.js" ></script>
+		<script src="js/测试1.js"></script>
+		<script src="js/测试2.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="college_img">
+				<img class="college_img_top" src="img/子网页top.png"/>
+				<!--<form>-->
+				<input class="in_txt" type="text" value="站内搜索"/>
+				<img class="header_serch" src="img/ser.jpg"/>
+				<!--</form>-->
+				
+			</div>
+			<ul class="nav">
+					<li><a href="#" title="西南政法大学">学校首页</a></li>
+					<li><span>|</span></li>
+					<li><a href="#" title="部门首页">部门首页</a></li>
+					<li><span>|</span></li>
+					<li><a href="#" title="部门概况">部门概况</a>
+						<div class="nav_select">
+							<dl>
+								<dd><a href="#">部门简介</a></dd>
+								<dd><a href="#">部门职责</a></dd>
+								<dd><a href="#">机构设置</a></dd>
+								<dd><a href="#">部门人员</a></dd>
+							</dl>
+						</div>
+					</li>
+					<li><span>|</span></li>
+					<li><a href="#" title="规章制度">规章制度</a>
+						<div class="nav_select_two">
+							<dl>
+								<dd><a href="#">上级文件</a></dd>
+								<dd><a href="#">学校文件</a></dd>
+								
+							</dl>
+						</div>
+					</li>
+					<li><span>|</span></li>
+					<li><a href="#" title="办事指南">办事指南</a>
+						<div class="nav_select_three">
+							<dl>
+								<dd><a href="#">工作流程</a></dd>
+							</dl>
+						</div>
+					</li>
+					<li><span>|</span></li>
+					<li><a href="#" title="常用下载">常用下载</a></li>
+					<li><span>|</span></li>
+					<li><a href="#" title="国家安全与保密">国家安全与保密</a></li>
+					<li><span>|</span></li>
+					<li><a href="#" title="联系我们">联系我们</a></li>
+				</ul>
+		
+		
+		</header>
+		<!--主题内容开始-->
+		<div class="college_list_main">
+			<script type="text/javascript" src="js/jquery.flexslider-min.js" ></script>
+			
+			
+			<div id='slide_box' class="slide_box">
+				<ul class="college_list_main_moveimg slides">
+					<li><a href="#"><img src="img/子网页 轮播图5.jpg"/></a></li>
+					<li><a href="#"><img src="img/子页面 轮播图1.jpg" /></a></li>
+					<li><a href="#"><img src="img/子页面 轮播图2.jpg" /></a></li>
+					<li><a href="#"><img src="img/子页面 轮播图4.jpg" /></a></li>
+					<li><a href="#"><img src="img/子页面 轮播图3.jpg" /></a></li>
+				</ul>
+				<ol class="flex-control-nav flex-control-paging">
+					<li><a class="">1</a></li>
+					<li><a class="flex-active">2</a></li>
+					<li><a class="">3</a></li>
+					<li><a class="">4</a>
+					</li><li><a class="">5</a></li>
+				</ol>
+			</div>
+			<div style="clear: both;"></div>
+			<script type="text/javascript">
+				console.log($('#slide_box'));
+				$('#slide_box').flexslider({
+					animation: "solid", //动画效果	
+					animationLoop: true, //是否循环播放	
+					controlNav: false,			
+					directionNav: false,			
+					startAt: 0, // Integer: 开始播放的 slide，从 0 开始计数			
+					slideshow: true, // Boolean: 是否自动播放			
+					slideshowSpeed: 2000, // Integer: ms 滚动间隔时间			
+					animationSpeed: 400, // Integer: ms 动画滚动速度			
+					direction: "horizontal", // String: 滚动方向 ["horizontal"|"vertical"]
+					});
+			</script>
+			
+			<div class="college_list_main_box">
+			<div class="college_list_main_content">
+				<div class="important_activity">
+					<h3>重要活动</h3>
+					<ul>
+						<li>
+							<span class="left_date">
+							<p>2018</p>
+							 05-28
+						    </span>
+						<a href="college_content.html" target="_blank">学校召开2018年第二次办公室主任业务培训会</a>
+						</li>
+						<li>
+							<span class="left_date">
+							<p>2018</p>
+							 04-19
+						    </span>
+						<a href="#">市级宣讲团成员樊伟宣讲全国两会精神</a>
+						</li>
+						<li>
+							<span class="left_date">
+							<p>2018</p>
+							 03-10
+						    </span>
+						<a href="#">学校召开2018年第一次办公室主任工作会暨业务培训会</a>
+						</li>
+						<li>
+							<span class="left_date">
+							<p>2018</p>
+							 02-09
+						    </span>
+						<a href="#">校领导班子召开2017年度民主生活会</a>
+						</li>
+					</ul>
+				</div>
+				<div class="guidance">
+					<h3>办事指南</h3>
+					<a href='#'><img src="img/img01.png"/></a>
+					<a href='#'><img src="img/img02.png"/></a>
+					<a href='#'><img src="img/img03.png"/></a>
+					<a href='#'><img src="img/img04.png"/></a>
+					<a href='#'><img src="img/img05.png"/></a>
+					<a href='#'><img src="img/img06.png"/></a>
+					<a href='#'><img src="img/img07.png"/></a>
+					<a href='#'><img src="img/img08.png"/></a>
+				</div>
+				<div class="inform">
+				<h3>通知公告</h3>
+					<ul>
+						<li><a href="#">&nbsp;&nbsp;关于2018年暑假工作安排的通知</a></li>
+						<li><a href="#">&nbsp;&nbsp;关于2018年劳动节放假及安排</a></li>
+						<li><a href="#">&nbsp;&nbsp;党政办公室2018年寒假值班表</a></li>
+						<li><a href="#">&nbsp;&nbsp;关于2018年寒假工作安排的通知</a></li>
+						<li><a href="#">&nbsp;&nbsp;关于2018年元旦节放假的通知</a></li>
+					</ul>	
+				</div>
+				<div class="work">
+					<h3>工作动态</h3>
+					<ul>
+						<li><a href="#">&nbsp;&nbsp;党政办支部举办“不忘初心，牢记使...</a></li>
+						<li><a href="#">&nbsp;&nbsp;我办两位教职工获学校表彰</a></li>
+						<li><a href="#">&nbsp;&nbsp;党政办公室召开2018年第六次政...</a></li>
+						<li><a href="#">&nbsp;&nbsp;党政办支部举办廉政党课暨主题党日...</a></li>
+						<li><a href="#">&nbsp;&nbsp;市教委邓沁泉督学来校视察安全稳定..</a></li>
+						<li><a href="#">&nbsp;&nbsp;党政办支部召开“讲政治、明纪律、...</a></li>
+						<li><a href="#">&nbsp;&nbsp;党政办公室  召开2018年第三...</a></li>
+						<li><a href="#">&nbsp;&nbsp;党政办支部书记讲党课：营造风清气...</a></li>
+						
+					</ul>	
+				</div>
+				<div class="download">
+					<h3>常用下载</h3>
+					<ul>
+						<li><a href="#">&nbsp;&nbsp;国内公务考察审批表</a></li>
+						<li><a href="#">&nbsp;&nbsp;西南政法大学受控档案利用申请表</a></li>
+						<li><a href="#">&nbsp;&nbsp;教职工人事档案查借阅审批表</a></li>
+						<li><a href="#">&nbsp;&nbsp;西南政法大学事业单位法人证书使用...</a></li>
+						<li><a href="#">&nbsp;&nbsp;西南政法大学会计档案利用申请表</a></li>
+						<li><a href="#">&nbsp;&nbsp;校印、法人代表签名章使用申请表</a></li>
+						<li><a href="#">&nbsp;&nbsp;西南政法大学合同（协议）审批表</a></li>
+						<li><a href="#">&nbsp;&nbsp;西南政法大学国内公务接待审批单</a></li>
+						
+					</ul>	
+				</div>
+				<div class="message_board">
+					<a href=" http://oa.swupl.edu.cn/"><img src="img/imagesLink1.jpg" /></a>
+				</div>
+				<div class="link">
+					<h3>友情链接</h3>
+					<select>
+						<option><a href="#">友情链接</a></option>
+						<option><a href="#">中华人民共和国教育部</a></option>
+						<option><a href="#">重庆市人民政府网</a></option>
+						<option><a href="#">重庆市教育委员会</a></option>	
+					</select>
+				</div>
+				<div class="other_school">
+					<h3>其他高校</h3>
+					<select>
+						<option><a href="#">其他高校</a></option>
+						<option><a href="#">中国政法大学</a></option>
+						<option><a href="#">华东政法大学</a></option>
+						<option><a href="#">中南财经政法大学 </a></option>
+						<option><a href="#">西北政法大学 </a></option>
+						<option><a href="#">重庆大学 </a></option>
+					</select>
+				</div>
+			</div>
+			</div>
+		</div>
+		<!--尾部 -->
+		<footer >
+	<div class="college_footer">
+		<p>西南政法大学党政办公室版权所有&nbsp; 渝ICP备05001036号-1</p>
+		<p>渝北校区：重庆市渝北区宝圣大道301号 邮编：401120&nbsp;&nbsp;&nbsp;沙坪坝校区：重庆市沙坪坝区壮志路2号 邮编：400031</p>
+	</div>	
+	</footer>
+	</body>
+</html>
